@@ -42,4 +42,5 @@
         'wizards/account_invoice_refund_view.xml',
     ],
     'sequence': 1,
+    'pre_init_hook': 'pre_init_hook',
 }
