@@ -242,9 +242,9 @@ class LogisticDespatch(models.Model):
             })
 
         if self.l10n_pe_dte_vehicle_2:
-            _despatch['placa_de_vehiculo_secundario_1'] = self.l10n_pe_dte_vehicle_2
+            _despatch['placa_de_vehiculo_secundario_1'] = self.l10n_pe_dte_vehicle_2.license_plate
         if self.l10n_pe_dte_vehicle_3:
-            _despatch['placa_de_vehiculo_secundario_2'] = self.l10n_pe_dte_vehicle_3
+            _despatch['placa_de_vehiculo_secundario_2'] = self.l10n_pe_dte_vehicle_3.license_plate
 
         if self.l10n_pe_dte_reference_ids:
             _despatch['documentos_de_referencia'] = []
